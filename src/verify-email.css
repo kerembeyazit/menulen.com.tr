@@ -35,7 +35,7 @@ body {
 
 .verify-container h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 1rem;
   letter-spacing: -1px;
