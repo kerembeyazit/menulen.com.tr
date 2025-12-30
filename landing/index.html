@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Menülen - Gitmeden Gör, Bilerek Seç | Restoran Menüleri ve Fiyatları</title>
+    <meta name="description" content="Şehrindeki yüzlerce kafe ve restoranın güncel menülerini ve fiyatlarını anında keşfet. Gitmeden gör, bilerek seç! Google Maps entegrasyonu ile kolay arama." />
+    <meta name="keywords" content="menülen, restoran menüleri, cafe menüleri, yemek fiyatları, restoran arama, güncel menüler, yemek siparişi, restoran rehberi" />
+    <meta name="author" content="Menülen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FE1D16" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.menulen.com.tr/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.menulen.com.tr/" />
+    <meta property="og:title" content="Menülen - Gitmeden Gör, Bilerek Seç" />
+    <meta property="og:description" content="Şehrindeki yüzlerce kafe ve restoranın güncel menülerini ve fiyatlarını anında keşfet. Gitmeden gör, bilerek seç!" />
+    <meta property="og:image" content="https://www.menulen.com.tr/assets/logo.png" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Menülen" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.menulen.com.tr/" />
+    <meta name="twitter:title" content="Menülen - Gitmeden Gör, Bilerek Seç" />
+    <meta name="twitter:description" content="Şehrindeki yüzlerce kafe ve restoranın güncel menülerini ve fiyatlarını anında keşfet." />
+    <meta name="twitter:image" content="https://www.menulen.com.tr/assets/logo.png" />
+    
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Menülen",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS, Android",
+      "description": "Şehrindeki yüzlerce kafe ve restoranın güncel menülerini ve fiyatlarını anında keşfet. Gitmeden gör, bilerek seç!",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Menülen",
+        "url": "https://www.menulen.com.tr"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Menülen",
+      "url": "https://www.menulen.com.tr",
+      "logo": "https://www.menulen.com.tr/assets/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/menulencomtr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "Customer Service",
+        "email": "info@menulen.com.tr",
+        "availableLanguage": "Turkish"
+      }
+    }
+    </script>
+    <style>
+      /* Inline Preloader Styles - loads immediately */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #FE1D16 0%, #FF5045 50%, #FF7A6B 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      #preloader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .preloader-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      .preloader-logo {
+        width: 80px;
+        height: 80px;
+        animation: logoFloat 2s ease-in-out infinite;
+      }
+      @keyframes logoFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+      }
+      .preloader-spinner {
+        position: relative;
+        width: 60px;
+        height: 60px;
+      }
+      .spinner-ring {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-top-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        animation: spin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      }
+      .spinner-ring:nth-child(2) {
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        border-top-color: rgba(255, 255, 255, 0.6);
+        animation-delay: -0.2s;
+      }
+      .spinner-ring:nth-child(3) {
+        width: 60%;
+        height: 60%;
+        margin: 20%;
+        border-top-color: rgba(255, 255, 255, 0.4);
+        animation-delay: -0.4s;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader-content">
+        <img src="/assets/logo.png" alt="Menülen Logo" class="preloader-logo" />
+        <div class="preloader-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <img src="/assets/logo.png" alt="Menülen Logo" />
+            <span>Menülen</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Giriş</a></li>
+            <li><a href="#about">Hakkında</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><a href="#download" class="btn-download">İndir</a></li>
+          </ul>
+          <button class="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Gitmeden Gör.<br/>
+              <span class="highlight">Bilerek Seç.</span>
+            </h1>
+            <p class="hero-description">
+              "Bugün ne yesek?", "Fiyatlar nasıl?" sorularına son! 
+              Şehrindeki yüzlerce kafe ve restoranın güncel menülerini 
+              ve fiyatlarını anında keşfet
+            </p>
+            <div class="hero-buttons">
+              <a href="https://apps.apple.com/us/app/men%C3%BClen/id6756741456" class="app-store-badge">
+                <img src="/assets/app-store-badge.svg" alt="Download on the App Store">
+              </a>
+            </div>
+          </div>
+          <div class="hero-phone">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <img src="/assets/screens/Content.png" alt="App Screen" class="screen-image active" />
+                  <img src="/assets/screens/Details.png" alt="App Screen" class="screen-image" />
+                  <img src="/assets/screens/Login.png" alt="App Screen" class="screen-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Özellikler</h2>
+        <p class="section-subtitle">
+          Google Maps'ten restoranı bulun, topluluk tarafından yüklenen güncel menüleri ve fotoğrafları inceleyin.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="map-pin" class="icon"></i>
+            </div>
+            <h3>HARİTADA ARAMA</h3>
+            <p>Google Maps altyapısıyla yakınınızdaki veya aradığınız tüm restoranlara anında ulaşın.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="camera" class="icon"></i>
+            </div>
+            <h3>GÜNCEL MENÜLER</h3>
+            <p>Kullanıcılar tarafından yüklenen fotoğraflar ve URL'ler ile her zaman en güncel menülere bakın.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="star" class="icon"></i>
+            </div>
+            <h3>PUAN & YORUM</h3>
+            <p>Sadece yemeğe değil, menülerin güncelliğine ve doğruluğuna da puan verin, topluluğa katılın.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Nedir?</h2>
+        
+        <div class="about-content">
+          <div class="about-card about-card-main">
+            <div class="about-icon">
+              <i data-lucide="lightbulb" class="icon"></i>
+            </div>
+            <h3>Menülen Nedir?</h3>
+            <p>
+              "Gitmeden Gör, Bilerek Seç" felsefesiyle yola çıktık. Menülen, restoran ve 
+              kafe ziyaretçilerinin en sık yaşadığı "Fiyatlar ne kadar?", "Acaba menüde ne var?" 
+              veya "Aradığım o özel tatlı burada var mı?" gibi sorulara en net cevabı vermek 
+              için kurulmuş bir topluluk platformudur.
+            </p>
+          </div>
+
+          <div class="about-card about-card-vision">
+            <div class="about-icon">
+              <i data-lucide="target" class="icon"></i>
+            </div>
+            <h3>Vizyonumuz</h3>
+            <p>
+              Türkiye'deki tüm yeme-içme mekanlarının menülerine tek bir yerden, 
+              güncel ve şeffaf bir şekilde ulaşılmasını sağlamak.
+            </p>
+          </div>
+
+          <div class="about-card full-width">
+            <div class="how-it-works-header">
+              <div class="how-icon">
+                <i data-lucide="zap" class="icon"></i>
+              </div>
+              <h3>Bu Nasıl Çalışıyor?</h3>
+              <p>
+                Menülen'in gücü, Google Maps'in kapsamlı restoran veritabanı ile siz değerli 
+                kullanıcılarımızın katkılarını birleştirmekten gelir:
+              </p>
+            </div>
+            <div class="steps-grid">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-icon-new">
+                  <i data-lucide="upload" class="icon"></i>
+                </div>
+                <h4>Siz Yüklersiniz</h4>
+                <p>Gittiğiniz bir mekanın menü fotoğrafını çeker veya menü URL'ini yüklersiniz.</p>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-icon-new">
+                  <i data-lucide="message-circle" class="icon"></i>
+                </div>
+                <h4>Siz Yorumlarsınız</h4>
+                <p>Sadece yemeği değil, menünün doğruluğunu veya güncelliğini de puanlarsınız.</p>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-icon-new">
+                  <i data-lucide="check-circle" class="icon"></i>
+                </div>
+                <h4>Biz Doğrularız</h4>
+                <p>Eklenen her içerik, admin ekibimizin onayından geçerek yayınlanır.</p>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-icon-new">
+                  <i data-lucide="users" class="icon"></i>
+                </div>
+                <h4>Herkes Görür</h4>
+                <p>Başka bir kullanıcı sizin eklediğiniz güncel menüye bakarak bilerek seçim yapar.</p>
+              </div>
+            </div>
+            <div class="about-summary">
+              Kısacası Menülen, bir restorana gitmeden önce bilinçli karar vermenizi 
+              sağlayan dijital menü rehberinizdir.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+      <div class="container">
+        <div class="download-content">
+          <h2>Hemen İndir</h2>
+          <p>Menülen'i telefonuna indir ve keşfetmeye başla!</p>
+          <div class="download-buttons">
+            <a href="https://apps.apple.com/us/app/men%C3%BClen/id6756741456" class="app-store-badge-large">
+              <img src="/assets/app-store-badge.svg" alt="App Store'dan İndir">
+            </a>
+          </div>
+          <p class="coming-soon">Android sürümü çok yakında!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <p class="section-subtitle">Sorularınız veya önerileriniz için bizimle iletişime geçin</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <h3>E-posta</h3>
+            <a href="mailto:info@menulen.com.tr" class="contact-link">info@menulen.com.tr</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="instagram"></i>
+            </div>
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/menulencomtr" target="_blank" rel="noopener noreferrer" class="contact-link">@menulencomtr</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="/assets/logo.png" alt="Menülen Logo" />
+            <span>Menülen</span>
+          </div>
+          <div class="footer-links">
+            <a href="./gizlilik-politikasi.html">Gizlilik Politikası</a>
+          </div>
+          <p>&copy; 2025 Menülen. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
+</html>

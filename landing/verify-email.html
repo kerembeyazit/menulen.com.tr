@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>E-posta Doğrulama - Menülen</title>
+    <meta name="description" content="Menülen hesabınızı aktifleştirmek için e-posta adresinizi doğrulayın." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#FE1D16" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="E-posta Doğrulama - Menülen" />
+    <meta property="og:description" content="Menülen hesabınızı aktifleştirmek için e-posta adresinizi doğrulayın." />
+    <meta property="og:image" content="https://www.menulen.com.tr/assets/logo.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/verify-email.css">
+</head>
+<body>
+  <div class="verify-page">
+    <div class="verify-container">
+      <div class="verify-icon" id="icon">⏳</div>
+      <h1>E-posta Doğrulama</h1>
+
+      <div class="loading-text" id="loading">
+        <p>E-posta adresiniz doğrulanıyor...</p>
+      </div>
+
+      <div id="message" class="message" style="display: none;"></div>
+
+      <div class="back-link">
+        <a href="./">
+          <i data-lucide="arrow-left"></i>
+          Ana Sayfaya Dön
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/verify-email.js"></script>
+</body>
+</html>
+

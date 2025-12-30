@@ -1,0 +1,28 @@
+{
+  "name": "Menülen - Restoran Menüleri ve Fiyatları",
+  "short_name": "Menülen",
+  "description": "Şehrindeki yüzlerce kafe ve restoranın güncel menülerini ve fiyatlarını anında keşfet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FE1D16",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle"],
+  "lang": "tr",
+  "dir": "ltr"
+}
+
