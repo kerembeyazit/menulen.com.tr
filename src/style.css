@@ -62,7 +62,7 @@ body {
   align-items: center;
   gap: 12px;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-light);
   text-decoration: none;
 }
@@ -180,7 +180,7 @@ body {
 
 .hero-text h1 {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: var(--text-light);
@@ -371,7 +371,7 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--text-dark);
   letter-spacing: -1px;
@@ -420,7 +420,7 @@ body {
 
 .feature-card h3 {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--text-dark);
   letter-spacing: -1px;
@@ -508,7 +508,7 @@ body {
 
 .about-card h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--text-dark);
   letter-spacing: -1px;
@@ -611,7 +611,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   box-shadow: 0 5px 20px rgba(254, 29, 22, 0.3);
 }
 
@@ -641,7 +641,7 @@ body {
 
 .step h4 {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0.8rem;
   color: var(--text-dark);
   letter-spacing: -1px;
@@ -691,7 +691,7 @@ body {
 
 .download-content h2 {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 1rem;
   letter-spacing: -1px;
 }
@@ -880,7 +880,7 @@ body {
   align-items: center;
   gap: 12px;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-logo img {
