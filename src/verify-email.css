@@ -19,18 +19,6 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   padding: 3rem 2rem;
   text-align: center;
-  animation: slideUp 0.5s ease;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .verify-icon {
@@ -43,16 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
 }
 
 .verify-container h1 {
@@ -75,12 +53,6 @@ body {
   margin: 2rem 0;
   font-size: 1.1rem;
   font-weight: 500;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .message.success {
@@ -109,12 +81,10 @@ body {
   text-decoration: none;
   border-radius: 12px;
   font-weight: 600;
-  transition: all 0.3s ease;
 }
 
 .back-link a:hover {
   background: #FF0077;
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(254, 29, 22, 0.3);
 }
 

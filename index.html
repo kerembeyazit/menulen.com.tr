@@ -42,7 +42,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css">
     
     <!-- Structured Data / JSON-LD -->
@@ -103,7 +103,6 @@
         justify-content: center;
         align-items: center;
         z-index: 9999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
       }
       #preloader.hidden {
         opacity: 0;
@@ -118,11 +117,6 @@
       .preloader-logo {
         width: 80px;
         height: 80px;
-        animation: logoFloat 2s ease-in-out infinite;
-      }
-      @keyframes logoFloat {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
       }
       .preloader-spinner {
         position: relative;
@@ -136,25 +130,18 @@
         border: 3px solid transparent;
         border-top-color: rgba(255, 255, 255, 0.8);
         border-radius: 50%;
-        animation: spin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
       }
       .spinner-ring:nth-child(2) {
         width: 80%;
         height: 80%;
         margin: 10%;
         border-top-color: rgba(255, 255, 255, 0.6);
-        animation-delay: -0.2s;
       }
       .spinner-ring:nth-child(3) {
         width: 60%;
         height: 60%;
         margin: 20%;
         border-top-color: rgba(255, 255, 255, 0.4);
-        animation-delay: -0.4s;
-      }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
       }
     </style>
   </head>
@@ -183,7 +170,7 @@
             <li><a href="#home">Giriş</a></li>
             <li><a href="#about">Hakkında</a></li>
             <li><a href="#contact">İletişim</a></li>
-            <li><a href="#download" class="btn-download">İndir</a></li>
+            <li><a href="#download" class="btn-download"><i data-lucide="download"></i>İndir</a></li>
           </ul>
           <button class="mobile-menu-toggle" aria-label="Menu">
             <span></span>
@@ -241,21 +228,21 @@
             <div class="feature-icon">
               <i data-lucide="map-pin" class="icon"></i>
             </div>
-            <h3>HARİTADA ARAMA</h3>
+            <h3>Haritada Arama</h3>
             <p>Google Maps altyapısıyla yakınınızdaki veya aradığınız tüm restoranlara anında ulaşın.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i data-lucide="camera" class="icon"></i>
             </div>
-            <h3>GÜNCEL MENÜLER</h3>
+            <h3>Güncel Menüler</h3>
             <p>Kullanıcılar tarafından yüklenen fotoğraflar ve URL'ler ile her zaman en güncel menülere bakın.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i data-lucide="star" class="icon"></i>
             </div>
-            <h3>PUAN & YORUM</h3>
+            <h3>Puan & Yorum</h3>
             <p>Sadece yemeğe değil, menülerin güncelliğine ve doğruluğuna da puan verin, topluluğa katılın.</p>
           </div>
         </div>
@@ -370,14 +357,14 @@
         <div class="contact-grid">
           <div class="contact-card">
             <div class="contact-icon">
-              <i data-lucide="mail"></i>
+              <i style="color: #fff;" data-lucide="mail"></i>
             </div>
             <h3>E-posta</h3>
             <a href="mailto:info@menulen.com.tr" class="contact-link">info@menulen.com.tr</a>
           </div>
           <div class="contact-card">
             <div class="contact-icon">
-              <i data-lucide="instagram"></i>
+              <i style="color: #fff;" data-lucide="instagram"></i>
             </div>
             <h3>Instagram</h3>
             <a href="https://www.instagram.com/menulencomtr" target="_blank" rel="noopener noreferrer" class="contact-link">@menulencomtr</a>

@@ -68,31 +68,15 @@ class MobileMenu {
   toggleMenu() {
     this.navMenu.classList.toggle('active');
     this.menuToggle.classList.toggle('active');
-    
-    // Animate hamburger icon
-    const spans = this.menuToggle.querySelectorAll('span');
-    if (this.navMenu.classList.contains('active')) {
-      spans[0].style.transform = 'rotate(45deg) translateY(10px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translateY(-10px)';
-    } else {
-      spans[0].style.transform = '';
-      spans[1].style.opacity = '';
-      spans[2].style.transform = '';
-    }
   }
 
   closeMenu() {
     this.navMenu.classList.remove('active');
     this.menuToggle.classList.remove('active');
-    const spans = this.menuToggle.querySelectorAll('span');
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '';
-    spans[2].style.transform = '';
   }
 }
 
-// Smooth scroll behavior for navigation links
+// Scroll behavior for navigation links
 class SmoothScroll {
   constructor() {
     this.init();
@@ -109,7 +93,7 @@ class SmoothScroll {
             const offsetTop = target.offsetTop - 80; // Account for fixed navbar
             window.scrollTo({
               top: offsetTop,
-              behavior: 'smooth'
+              behavior: 'auto'
             });
           }
         }
@@ -118,33 +102,7 @@ class SmoothScroll {
   }
 }
 
-// Scroll animations
-class ScrollAnimations {
-  constructor() {
-    this.elements = document.querySelectorAll('.feature-card, .about-card, .step');
-    this.init();
-  }
-
-  init() {
-    // Create intersection observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    // Observe all elements
-    this.elements.forEach(element => {
-      observer.observe(element);
-    });
-  }
-}
+// Scroll animations removed
 
 // Navbar scroll effect
 class NavbarScroll {
@@ -183,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
   new Carousel();
   new MobileMenu();
   new SmoothScroll();
-  new ScrollAnimations();
   new NavbarScroll();
   
   // Initialize Lucide icons
