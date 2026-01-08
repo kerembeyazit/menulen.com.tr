@@ -167,10 +167,10 @@
             <span>Menülen</span>
           </div>
           <ul class="nav-menu">
-            <li><a href="#home">Giriş</a></li>
-            <li><a href="#about">Hakkında</a></li>
-            <li><a href="#contact">İletişim</a></li>
-            <li><a href="#download" class="btn-download"><i data-lucide="download"></i>İndir</a></li>
+            <li><a href="#home" data-i18n="nav.home">Giriş</a></li>
+            <li><a href="#about" data-i18n="nav.about">Hakkında</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+            <li><a href="#download" class="btn-download"><i data-lucide="download"></i><span data-i18n="nav.download">İndir</span></a></li>
           </ul>
           <button class="mobile-menu-toggle" aria-label="Menu">
             <span></span>
@@ -187,10 +187,10 @@
         <div class="hero-content">
           <div class="hero-text">
             <h1>
-              Gitmeden Gör.<br/>
-              <span class="highlight">Bilerek Seç.</span>
+              <span data-i18n="hero.title1">Gitmeden Gör.</span><br/>
+              <span class="highlight" data-i18n="hero.title2">Bilerek Seç.</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
               "Bugün ne yesek?", "Fiyatlar nasıl?" sorularına son! 
               Şehrindeki yüzlerce kafe ve restoranın güncel menülerini 
               ve fiyatlarını anında keşfet
@@ -219,8 +219,8 @@
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="container">
-        <h2 class="section-title">Özellikler</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title" data-i18n="features.title">Özellikler</h2>
+        <p class="section-subtitle" data-i18n="features.subtitle">
           Google Maps'ten restoranı bulun, topluluk tarafından yüklenen güncel menüleri ve fotoğrafları inceleyin.
         </p>
         <div class="features-grid">
@@ -228,22 +228,22 @@
             <div class="feature-icon">
               <i data-lucide="map-pin" class="icon"></i>
             </div>
-            <h3>Haritada Arama</h3>
-            <p>Google Maps altyapısıyla yakınınızdaki veya aradığınız tüm restoranlara anında ulaşın.</p>
+            <h3 data-i18n="features.maps.title">Haritada Arama</h3>
+            <p data-i18n="features.maps.description">Google Maps altyapısıyla yakınınızdaki veya aradığınız tüm restoranlara anında ulaşın.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i data-lucide="camera" class="icon"></i>
             </div>
-            <h3>Güncel Menüler</h3>
-            <p>Kullanıcılar tarafından yüklenen fotoğraflar ve URL'ler ile her zaman en güncel menülere bakın.</p>
+            <h3 data-i18n="features.menus.title">Güncel Menüler</h3>
+            <p data-i18n="features.menus.description">Kullanıcılar tarafından yüklenen fotoğraflar ve URL'ler ile her zaman en güncel menülere bakın.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i data-lucide="star" class="icon"></i>
             </div>
-            <h3>Puan & Yorum</h3>
-            <p>Sadece yemeğe değil, menülerin güncelliğine ve doğruluğuna da puan verin, topluluğa katılın.</p>
+            <h3 data-i18n="features.ratings.title">Puan & Yorum</h3>
+            <p data-i18n="features.ratings.description">Sadece yemeğe değil, menülerin güncelliğine ve doğruluğuna da puan verin, topluluğa katılın.</p>
           </div>
         </div>
       </div>
@@ -252,15 +252,15 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title">Nedir?</h2>
+        <h2 class="section-title" data-i18n="about.title">Nedir?</h2>
         
         <div class="about-content">
           <div class="about-card about-card-main">
             <div class="about-icon">
               <i data-lucide="lightbulb" class="icon"></i>
             </div>
-            <h3>Menülen Nedir?</h3>
-            <p>
+            <h3 data-i18n="about.what.title">Menülen Nedir?</h3>
+            <p data-i18n="about.what.description">
               "Gitmeden Gör, Bilerek Seç" felsefesiyle yola çıktık. Menülen, restoran ve 
               kafe ziyaretçilerinin en sık yaşadığı "Fiyatlar ne kadar?", "Acaba menüde ne var?" 
               veya "Aradığım o özel tatlı burada var mı?" gibi sorulara en net cevabı vermek 
@@ -272,8 +272,8 @@
             <div class="about-icon">
               <i data-lucide="target" class="icon"></i>
             </div>
-            <h3>Vizyonumuz</h3>
-            <p>
+            <h3 data-i18n="about.vision.title">Vizyonumuz</h3>
+            <p data-i18n="about.vision.description">
               Türkiye'deki tüm yeme-içme mekanlarının menülerine tek bir yerden, 
               güncel ve şeffaf bir şekilde ulaşılmasını sağlamak.
             </p>
@@ -284,8 +284,8 @@
               <div class="how-icon">
                 <i data-lucide="zap" class="icon"></i>
               </div>
-              <h3>Bu Nasıl Çalışıyor?</h3>
-              <p>
+              <h3 data-i18n="about.how.title">Bu Nasıl Çalışıyor?</h3>
+              <p data-i18n="about.how.description">
                 Menülen'in gücü, Google Maps'in kapsamlı restoran veritabanı ile siz değerli 
                 kullanıcılarımızın katkılarını birleştirmekten gelir:
               </p>
@@ -296,35 +296,35 @@
                 <div class="step-icon-new">
                   <i data-lucide="upload" class="icon"></i>
                 </div>
-                <h4>Siz Yüklersiniz</h4>
-                <p>Gittiğiniz bir mekanın menü fotoğrafını çeker veya menü URL'ini yüklersiniz.</p>
+                <h4 data-i18n="about.step1.title">Siz Yüklersiniz</h4>
+                <p data-i18n="about.step1.description">Gittiğiniz bir mekanın menü fotoğrafını çeker veya menü URL'ini yüklersiniz.</p>
               </div>
               <div class="step">
                 <div class="step-number">2</div>
                 <div class="step-icon-new">
                   <i data-lucide="message-circle" class="icon"></i>
                 </div>
-                <h4>Siz Yorumlarsınız</h4>
-                <p>Sadece yemeği değil, menünün doğruluğunu veya güncelliğini de puanlarsınız.</p>
+                <h4 data-i18n="about.step2.title">Siz Yorumlarsınız</h4>
+                <p data-i18n="about.step2.description">Sadece yemeği değil, menünün doğruluğunu veya güncelliğini de puanlarsınız.</p>
               </div>
               <div class="step">
                 <div class="step-number">3</div>
                 <div class="step-icon-new">
                   <i data-lucide="check-circle" class="icon"></i>
                 </div>
-                <h4>Biz Doğrularız</h4>
-                <p>Eklenen her içerik, admin ekibimizin onayından geçerek yayınlanır.</p>
+                <h4 data-i18n="about.step3.title">Biz Doğrularız</h4>
+                <p data-i18n="about.step3.description">Eklenen her içerik, admin ekibimizin onayından geçerek yayınlanır.</p>
               </div>
               <div class="step">
                 <div class="step-number">4</div>
                 <div class="step-icon-new">
                   <i data-lucide="users" class="icon"></i>
                 </div>
-                <h4>Herkes Görür</h4>
-                <p>Başka bir kullanıcı sizin eklediğiniz güncel menüye bakarak bilerek seçim yapar.</p>
+                <h4 data-i18n="about.step4.title">Herkes Görür</h4>
+                <p data-i18n="about.step4.description">Başka bir kullanıcı sizin eklediğiniz güncel menüye bakarak bilerek seçim yapar.</p>
               </div>
             </div>
-            <div class="about-summary">
+            <div class="about-summary" data-i18n="about.summary">
               Kısacası Menülen, bir restorana gitmeden önce bilinçli karar vermenizi 
               sağlayan dijital menü rehberinizdir.
             </div>
@@ -337,14 +337,14 @@
     <section id="download" class="download">
       <div class="container">
         <div class="download-content">
-          <h2>Hemen İndir</h2>
-          <p>Menülen'i telefonuna indir ve keşfetmeye başla!</p>
+          <h2 data-i18n="download.title">Hemen İndir</h2>
+          <p data-i18n="download.description">Menülen'i telefonuna indir ve keşfetmeye başla!</p>
           <div class="download-buttons">
             <a href="https://apps.apple.com/us/app/men%C3%BClen/id6756741456" class="app-store-badge-large">
               <img src="/assets/app-store-badge.svg" alt="App Store'dan İndir">
             </a>
           </div>
-          <p class="coming-soon">Android sürümü çok yakında!</p>
+          <p class="coming-soon" data-i18n="download.coming">Android sürümü çok yakında!</p>
         </div>
       </div>
     </section>
@@ -352,21 +352,21 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title">İletişim</h2>
-        <p class="section-subtitle">Sorularınız veya önerileriniz için bizimle iletişime geçin</p>
+        <h2 class="section-title" data-i18n="contact.title">İletişim</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Sorularınız veya önerileriniz için bizimle iletişime geçin</p>
         <div class="contact-grid">
           <div class="contact-card">
             <div class="contact-icon">
               <i style="color: #fff;" data-lucide="mail"></i>
             </div>
-            <h3>E-posta</h3>
+            <h3 data-i18n="contact.email">E-posta</h3>
             <a href="mailto:info@menulen.com.tr" class="contact-link">info@menulen.com.tr</a>
           </div>
           <div class="contact-card">
             <div class="contact-icon">
               <i style="color: #fff;" data-lucide="instagram"></i>
             </div>
-            <h3>Instagram</h3>
+            <h3 data-i18n="contact.instagram">Instagram</h3>
             <a href="https://www.instagram.com/menulencomtr" target="_blank" rel="noopener noreferrer" class="contact-link">@menulencomtr</a>
           </div>
         </div>
@@ -382,13 +382,14 @@
             <span>Menülen</span>
           </div>
           <div class="footer-links">
-            <a href="./gizlilik-politikasi.html">Gizlilik Politikası</a>
+            <a href="./gizlilik-politikasi.html" data-i18n="footer.privacy">Gizlilik Politikası</a>
           </div>
-          <p>&copy; 2025 Menülen. Tüm hakları saklıdır.</p>
+          <p>&copy; 2025 Menülen. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
         </div>
       </div>
     </footer>
 
+    <script type="module" src="/src/i18n.js"></script>
     <script type="module" src="/src/main.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
   </body>

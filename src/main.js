@@ -1,4 +1,5 @@
 import './style.css'
+import './i18n.js'
 
 // Carousel functionality
 class Carousel {
@@ -138,6 +139,11 @@ function hidePreloader() {
 
 // Initialize all components when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize i18n first
+  if (typeof window.I18n !== 'undefined') {
+    window.i18n = new window.I18n();
+  }
+  
   new Carousel();
   new MobileMenu();
   new SmoothScroll();
